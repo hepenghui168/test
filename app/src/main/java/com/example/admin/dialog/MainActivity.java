@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initFilter() {
+        myBroadcastReceiver = new MyBroadcastReceiver();
         IntentFilter filter = new IntentFilter();
         filter.addAction(ACTION_NORMAL_BROADCAST);
         filter.addAction(ACTION_ORDER_BROADCAST);
