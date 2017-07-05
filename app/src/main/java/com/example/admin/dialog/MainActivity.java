@@ -179,5 +179,6 @@ public class MainActivity extends AppCompatActivity {
     private void instanceTest() {
         InstanceClass.getInstance().setState(1);
         int state = InstanceClass.getInstance().getState();
+        Log.i(TAG, "state="+state);
     }
 }
